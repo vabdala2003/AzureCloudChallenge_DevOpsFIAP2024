@@ -1,0 +1,45 @@
+POST: /localhost:8080/cliente/
+
+{
+    "nome": "Lucas Oliveira",
+    "cpf": "12345678901",
+    "rg": "987654321",
+    "dataNascimento": "1990-03-15",
+    "senha": "senha4"
+}
+
+{
+    "nome": "Ana Souza",
+    "cpf": "23456789012",
+    "rg": "192837465",
+    "dataNascimento": "1985-07-22",
+    "senha": "senha5"
+}
+
+{
+    "nome": "Carlos Silva",
+    "cpf": "34567890123",
+    "rg": "564738291",
+    "dataNascimento": "1992-11-09",
+    "senha": "senha6"
+}
+
+{
+    "nome": "Mariana Costa",
+    "cpf": "45678901234",
+    "rg": "876543210",
+    "dataNascimento": "1998-05-30",
+    "senha": "senha7"
+}
+
+{
+    "nome": "Felipe Pereira",
+    "cpf": "56789012345",
+    "rg": "345678901",
+    "dataNascimento": "1993-09-12",
+    "senha": "senha8"
+}
+
+
+	
+    
