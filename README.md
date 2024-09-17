@@ -55,6 +55,7 @@ Instale o SQL Server se necessário.
 Teste a API localmente usando o Insomnia, não esqueça de rodar a api na IDE de preferência:
 
 Cadastro de Cliente
+
 POST: http://localhost:8080/cliente/register
 {
   "nome": "Lucas Oliveira",
@@ -63,14 +64,19 @@ POST: http://localhost:8080/cliente/register
   "dataNascimento": "1990-03-15",
   "senha": "senha4"
 }
+
 Login para Obter Token
+
 POST: http://localhost:8080/login
 {
   "email": "email_do_login",
   "password": "senha_do_login"
 }
+
 Após o login, copie o token retornado e utilize-o como autenticação nas próximas requisições (Método: Bearer Token, Valor: Token).
+
 Criar Pagamento
+
 POST: http://localhost:8080/produto/{id_do_cliente}/pagamento
 {
   "nome": "KARINA RODRIGUES",
@@ -78,21 +84,29 @@ POST: http://localhost:8080/produto/{id_do_cliente}/pagamento
   "descricao": "CREDITO DIVIDIDO EM 2X",
   "data": "2024-04-11"
 }
+
 Listar Clientes
+
 GET: http://localhost:8080/cliente
+
 Cadastro de Telefone
+
 POST: http://localhost:8080/cliente/{Id_Cliente}/telefone
 {
   "numeroTelefone": "STRING",
   "ddd": "STRING",
   "operadora": "STRING"
 }
+
 Atualizar Telefone
+
 PUT: http://localhost:8080/telefone/{ID}
 {
   "numeroTelefone": "STRING",
   "ddd": "STRING",
   "operadora": "STRING"
 }
+
 Deletar Telefone
+
 DELETE: http://localhost:8080/telefone/{ID}
