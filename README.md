@@ -42,7 +42,7 @@ az webapp deploy --resource-group AppResourcesChallenge --name PyAIJarvis --src-
 sqlcmd -S tcp:sqlserverjarvis-westus.database.windows.net,1433 -d bdjarvischallenge -U adminuser -P Fiap@987! -i AppsDeploy/DDL_SQL/script.sql
 # Se ocorrer um erro, siga os próximos passos:
   Adicione a regra de firewall:
-  az sql server firewall-rule create --resource-group AppResourcesChallenge --server sqlserverjarvis-westus --name AllowLocalIP --start-ip-address <ip mostrado no comando anterior> --end-ip-address <ip mostrado no comando anterior>
+  az sql server firewall-rule create --resource-group AppResourcesChallenge --server sqlserverjarvis-westus --name AllowLocalIP --start-ip-address (ip mostrado no comando anterior) --end-ip-address (ip mostrado no comando anterior)
 
 Reexecute o script SQL:
 sqlcmd -S tcp:sqlserverjarvis-westus.database.windows.net,1433 -d bdjarvischallenge -U adminuser -P Fiap@987! -i AppsDeploy/DDL_SQL/script.sql
